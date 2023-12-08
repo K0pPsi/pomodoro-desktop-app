@@ -1,0 +1,21 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "A simple Pomdoro App",
+  "homepage": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastian Kopp",
+  "license": "ISC",
+  "email": "sebastian.kopp@gmx.at",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "electron": "^26.1.0",
+    "electron-builder": "^24.6.4"
+  }
+}

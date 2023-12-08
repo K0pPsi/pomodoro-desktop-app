@@ -1,0 +1,27 @@
+{
+  "appId": "com.pomodoro-app",
+  "productName": "Pomodoro",
+  "directories": {
+    "output": "foo"
+  },
+  "files": [
+    "**/*",
+    "node_modules/**/*",
+    "!node_modules/electron-*",
+    "!node_modules/electron-builder",
+    "/assets/audio/finish.wav"
+  ],
+  "nsis": {
+    "oneClick": false,
+    "perMachine": true,
+    "allowToChangeInstallationDirectory": true
+  },
+  "win": {
+    "target": ["nsis", "portable"],
+    "icon": "assets/icon/alarm.ico"
+  },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "maintainer": "sebastian.kopp@gmx.at"
+  }
+}

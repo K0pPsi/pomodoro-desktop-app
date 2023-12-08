@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <h1 id="header">It's Pomodoro time</h1>
+    <div class="add" id="input-section">
+      <div class="input-time">
+        <label for="time">Pomodoro duration:</label>
+        <input type="number" id="time" placeholder="in minutes" />
+      </div>
+      <div class="input-anzahl">
+        <label for="round">Rounds:</label>
+        <input type="number" placeholder="number of rounds" id="rounds" />
+      </div>
+
+      <button id="start-btn">Start</button>
+    </div>
+
+    <div class="rm" id="time-section">
+      <h2><span id="min"></span> <span id="sec"></span></h2>
+    </div>
+
+    <script src="render.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
